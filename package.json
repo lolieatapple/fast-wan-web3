@@ -1,6 +1,6 @@
 {
   "name": "fast-wan-web3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to select a faster web3 rpc server in wanchain.",
   "main": "./lib/index.js",
   "repository": "https://github.com/lolieatapple/fast-wan-web3.git",
@@ -13,13 +13,13 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "@babel/register": "^7.10.4",
-    "core-js": "^3.6.5",
-    "regenerator-runtime": "^0.13.5"
+    "core-js": "^3.6.5"
   },
   "scripts": {
     "build": "babel src -d lib"
   },
   "dependencies": {
+    "regenerator-runtime": "^0.13.5",
     "web3": "^1.2.9"
   }
 }
