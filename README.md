@@ -8,7 +8,8 @@ const fastWeb3 = require('fast-wan-web3');
 async function main() {
     //networkId 3 is testnet, 1 is mainnet
     let networkId = 3;
-    let web3 = await fastWeb3.getFastWeb3(networkId);
+    await fastWeb3.init(networkId);
+    let web3 = await fastWeb3.getWeb3();
     console.log(await web3.eth.getBlockNumber());
 }
 

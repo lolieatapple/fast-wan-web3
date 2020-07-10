@@ -27,7 +27,7 @@ export function setRpc( urls, networkId = 1) {
     }
 }
 
-export const getFastWeb3 = async (networkId = 1) => {
+export const init = async (networkId = 1) => {
     nodeUrls = networkId === 1 ? nodeUrlsMainnet : nodeUrlsTestnet;
     // console.log('ready to new web3...');
     for (let i=0; i<nodeUrls.length; i++) {
@@ -76,7 +76,6 @@ export const getFastWeb3 = async (networkId = 1) => {
     web3select = ret[0].index;
     // console.log('web3select', web3select, nodeUrls[web3select]);
     switchFinish = true;
-    return getWeb3();
 }
 
 export const getWeb3 = () => {
